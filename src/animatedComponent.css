@@ -1,0 +1,31 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(103%);
+    transform: translateX(103%);
+    will-change: transform;
+    width: 50%;
+    background-color: grey;
+    color: white;
+    height: 100vh;
+}
+
+.drawer.visible {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.drawer.animatable {
+    transition: all 130ms ease-in;
+}
+/* .drawer {
+    transition: all 130ms ease-in;
+} */
+
+.drawer.visible.animatable {
+    transition: all 330ms ease-out;
+}
+/* .drawer.visible {
+    transition: all 330ms ease-out;
+} */
